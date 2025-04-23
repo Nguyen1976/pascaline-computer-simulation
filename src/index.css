@@ -1,0 +1,41 @@
+.pascaline {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212;
+}
+
+.gear-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.wheel {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: grab;
+  user-select: none;
+  overflow: visible;
+}
+
+.wheel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-origin: center center;
+  transition: transform 0.05s linear;
+  pointer-events: none;
+}
