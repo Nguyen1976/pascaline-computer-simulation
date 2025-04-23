@@ -133,28 +133,33 @@ function App() {
   }, [right])
 
   return (
-    <div className='pascaline'>
-      <div className='gear-container'>
-        <div className='number'>{left}</div>
-        <div className='wheel' onMouseDown={handleMouseDown('left')}>
-          <img
-            src='https://img.icons8.com/external-those-icons-lineal-those-icons/100/FFFFFF/external-wheel-cars-components-those-icons-lineal-those-icons.png'
-            alt='Left Gear'
-            className='wheel-img'
-            style={{ transform: `rotate(${leftRotationDeg / 360}turn)` }}
-          />
-        </div>
-      </div>
+    <div className='app'>
+      <h1 className='title'>PASCALINE COMPUTER SIMULATION</h1>
+      <div className='pascaline'>
+        <div className='main-content'>
+          <div className='gear-container'>
+            <div className='number'>{left}</div>
+            <div className='wheel' onMouseDown={handleMouseDown('left')}>
+              <img
+                src='https://img.icons8.com/external-those-icons-lineal-those-icons/100/FFFFFF/external-wheel-cars-components-those-icons-lineal-those-icons.png'
+                alt='Left Gear'
+                className='wheel-img'
+                style={{ transform: `rotate(${leftRotationDeg / 360}turn)` }}
+              />
+            </div>
+          </div>
 
-      <div className='gear-container'>
-        <div className='number'>{right}</div>
-        <div className='wheel' onMouseDown={handleMouseDown('right')}>
-          <img
-            src='https://img.icons8.com/external-those-icons-lineal-those-icons/100/FFFFFF/external-wheel-cars-components-those-icons-lineal-those-icons.png'
-            alt='Right Gear'
-            className='wheel-img'
-            style={{ transform: `rotate(${rightRotationDeg / 360}turn)` }}
-          />
+          <div className='gear-container'>
+            <div className='number'>{right}</div>
+            <div className='wheel' onMouseDown={handleMouseDown('right')}>
+              <img
+                src='https://img.icons8.com/external-those-icons-lineal-those-icons/100/FFFFFF/external-wheel-cars-components-those-icons-lineal-those-icons.png'
+                alt='Right Gear'
+                className='wheel-img'
+                style={{ transform: `rotate(${rightRotationDeg / 360}turn)` }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
